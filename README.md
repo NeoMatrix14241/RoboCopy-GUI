@@ -5,8 +5,6 @@ This is a PowerShell script that provides a graphical user interface (GUI) for t
 
 ![image](https://github.com/user-attachments/assets/2556ac50-3957-46c9-9c35-2ea9336dcd62)
 
-
-
 ## Features
 
 - Browse and select source folders and files.
