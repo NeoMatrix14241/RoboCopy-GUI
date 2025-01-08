@@ -3,7 +3,8 @@ An experimental PowerShell Script based GUI for Windows RoboCopy
 
 This is a PowerShell script that provides a graphical user interface (GUI) for the RoboCopy command-line tool. RoboCopy is a robust file copy tool built into Windows, and this script makes it easier to use by providing a simple GUI.
 
-![image](https://github.com/user-attachments/assets/47227ca4-7672-48e2-9d2b-317363bfe5af)
+![image](https://github.com/user-attachments/assets/2556ac50-3957-46c9-9c35-2ea9336dcd62)
+
 
 
 ## Features
