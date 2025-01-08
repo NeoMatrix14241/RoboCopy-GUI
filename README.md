@@ -24,6 +24,6 @@ This is a PowerShell script that provides a graphical user interface (GUI) for t
     cd RoboCopy-GUI
     ```
     Or download the script
-        [Download RoboCopyGUI-v1.0.0.0.zip](https://github.com/NeoMatrix14241/RoboCopy-GUI/releases/download/RoboCopyGUI-v1.0.0.0/RoboCopyGUI-v1.0.0.0.zip)
+        [RoboCopyGUI-v1.0.0.0.zip](https://github.com/NeoMatrix14241/RoboCopy-GUI/releases/download/RoboCopyGUI-v1.0.0.0/RoboCopyGUI-v1.0.0.0.zip)
 
 2. Run `robocopy-gui.bat`
