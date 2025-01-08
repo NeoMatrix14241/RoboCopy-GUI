@@ -1,0 +1,29 @@
+# NAME: RoboCopy GUI
+# CURRENT VERSION: v1.0.0.0
+
+name: Generate ZIP File for Download
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate ZIP File for Download
+        run: |
+          zip -r RoboCopyGUI-v1.0.0.0.zip ReadMe.txt robocopy-gui.bat robocopy.ps1
+
+      - name: Upload ZIP to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: MagickTess-v1.0.0.0.zip
+          tag_name: "RoboCopyGUI-v1.0.0.0"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
