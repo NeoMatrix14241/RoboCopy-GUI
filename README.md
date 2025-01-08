@@ -18,12 +18,12 @@ This is a PowerShell script that provides a graphical user interface (GUI) for t
 
 ## Usage and Downloads
 
-1a. Clone the repository:
+1. Clone the repository:
     ```bash
     git clone https://github.com/NeoMatrix14241/RoboCopy-GUI.git
     cd RoboCopy-GUI
     ```
-1b. Download the script:
-    [Download RoboCopyGUI-v1.0.0.0.zip](https://github.com/NeoMatrix14241/RoboCopy-GUI/releases/download/RoboCopyGUI-v1.0.0.0/RoboCopyGUI-v1.0.0.0.zip)
+    Or download the script
+        [Download RoboCopyGUI-v1.0.0.0.zip](https://github.com/NeoMatrix14241/RoboCopy-GUI/releases/download/RoboCopyGUI-v1.0.0.0/RoboCopyGUI-v1.0.0.0.zip)
 
 2. Run `robocopy-gui.bat`
