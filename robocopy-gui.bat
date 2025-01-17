@@ -10,16 +10,16 @@ where pwsh >nul 2>nul
 if %errorlevel% neq 0 (
     powershell.exe -Command "Get-ChildItem -Path '%scriptPath%' -File | Where-Object { $_.Name -in @('robocopy.ps1', 'robocopy-gui.bat', 'ReadMe.txt') } | Unblock-File"
     powershell.exe -Command "Get-ChildItem -Path '%scriptPath%\setup' -Recurse -File | Unblock-File"
-    start /max powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "robocopy.ps1"
+    powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "%scriptPath%\robocopy.ps1"
 ) else (
     pwsh -NoProfile -Command "exit" >nul 2>nul
     if %errorlevel% neq 0 (
         powershell.exe -Command "Get-ChildItem -Path '%scriptPath%' -File | Where-Object { $_.Name -in @('robocopy.ps1', 'robocopy-gui.bat', 'ReadMe.txt') } | Unblock-File"
         powershell.exe -Command "Get-ChildItem -Path '%scriptPath%\setup' -Recurse -File | Unblock-File"
-        start /max powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "robocopy.ps1"
+        powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy RemoteSigned -File "%scriptPath%\robocopy.ps1"
     ) else (
         pwsh.exe -Command "Get-ChildItem -Path '%scriptPath%' -File | Where-Object { $_.Name -in @('robocopy.ps1', 'robocopy-gui.bat', 'ReadMe.txt') } | Unblock-File"
         pwsh.exe -Command "Get-ChildItem -Path '%scriptPath%\setup' -Recurse -File | Unblock-File"
-        start /max pwsh.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "robocopy.ps1"
+        pwsh.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy RemoteSigned -File "%scriptPath%\robocopy.ps1"
     )
 )
